@@ -19,12 +19,12 @@ class FontAwesomePickerAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath = '@vendor/bower-asset/fontawesome-iconpicker/dist';
+        $this->sourcePath = '@vendor/futuretek/yii2-font-awesome-picker/assets';
         $this->css = [
-            'css/fontawesome-iconpicker.min.css',
+            YII_DEBUG ? 'css/fontawesome-iconpicker.css ' : 'css/fontawesome-iconpicker.min.css',
         ];
         $this->js = [
-            'js/fontawesome-iconpicker.min.js',
+            YII_DEBUG ? 'js/fontawesome-iconpicker.js' : 'js/fontawesome-iconpicker.min.js',
         ];
         $this->depends = [
             'yii\web\YiiAsset',
