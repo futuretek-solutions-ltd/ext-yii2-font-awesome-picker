@@ -1,0 +1,49 @@
+{
+    "name": "futuretek/yii2-font-awesome-picker",
+    "description": "Yii2 Font Awesome Picker",
+    "keywords": [
+        "yii2",
+        "extension",
+        "widget",
+        "font awesome",
+        "picker",
+        "plugin"
+    ],
+    "type": "yii2-extension",
+    "license": "proprietary",
+    "homepage": "http://www.futuretek.cz/",
+    "authors": [
+        {
+            "name": "Lukas Cerny",
+            "email": "lukas.cerny@futuretek.cz",
+            "homepage": "http://www.futuretek.cz",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://jira.futuretek.cz/browse/YII",
+        "wiki": "https://doc.futuretek.cz/display/YII",
+        "source": "https://git.futuretek.cz/projects/YII"
+    },
+    "require": {
+        "yiisoft/yii2": "2.0.*",
+        "yiisoft/yii2-bootstrap": "2.0.*",
+        "bower-asset/fontawesome-iconpicker": "~1.2"
+    },
+    "repositories": [
+        {
+            "url": "http://composer.futuretek.cz/repo/private/",
+            "type": "composer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "futuretek\\widgets\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
