@@ -23,26 +23,21 @@
     "support": {
         "issues": "https://jira.futuretek.cz/browse/YII",
         "wiki": "https://doc.futuretek.cz/display/YII",
-        "source": "https://git.futuretek.cz/projects/YII"
+        "source": "https://git.futuretek.cz/projects/YII/repos/ext-font-awesome-picker/browse"
     },
     "require": {
-        "yiisoft/yii2": "2.0.*",
-        "yiisoft/yii2-bootstrap": "2.0.*"
+        "yiisoft/yii2": "^2.0.0",
+        "yiisoft/yii2-bootstrap": "^2.0.0"
     },
     "repositories": [
         {
-            "url": "http://composer.futuretek.cz/repo/private/",
+            "url": "https://composer.futuretek.cz/repo/private/",
             "type": "composer"
         }
     ],
     "autoload": {
         "psr-4": {
             "futuretek\\widgets\\": ""
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
         }
     }
 }
