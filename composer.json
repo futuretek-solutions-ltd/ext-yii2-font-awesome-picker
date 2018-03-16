@@ -10,7 +10,7 @@
         "plugin"
     ],
     "type": "yii2-extension",
-    "license": "proprietary",
+    "license": "Apache-2.0",
     "homepage": "http://www.futuretek.cz/",
     "authors": [
         {
@@ -21,20 +21,14 @@
         }
     ],
     "support": {
-        "issues": "https://jira.futuretek.cz/browse/YII",
-        "wiki": "https://doc.futuretek.cz/display/YII",
-        "source": "https://git.futuretek.cz/projects/YII/repos/ext-font-awesome-picker/browse"
+        "issues": "https://github.com/futuretek-solutions-ltd/ext-yii2-font-awesome-picker/issues",
+        "wiki": "https://github.com/futuretek-solutions-ltd/ext-yii2-font-awesome-picker/wiki",
+        "source": "https://github.com/futuretek-solutions-ltd/ext-yii2-font-awesome-picker"
     },
     "require": {
         "yiisoft/yii2": "^2.0.0",
         "yiisoft/yii2-bootstrap": "^2.0.0"
     },
-    "repositories": [
-        {
-            "url": "https://composer.futuretek.cz/repo/private/",
-            "type": "composer"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "futuretek\\widgets\\": ""

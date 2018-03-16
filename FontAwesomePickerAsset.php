@@ -8,7 +8,7 @@ use yii\web\AssetBundle;
  *
  * @package futuretek\widgets
  * @author  Lukas Cerny <lukas.cerny@futuretek.cz>
- * @license http://www.futuretek.cz/license FTSLv1
+ * @license Apache-2.0
  * @link    http://www.futuretek.cz
  */
 class FontAwesomePickerAsset extends AssetBundle

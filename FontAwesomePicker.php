@@ -11,7 +11,7 @@ use yii\web\View;
  *
  * @package app\classes\leaflet
  * @author  Lukas Cerny <lukas.cerny@futuretek.cz>
- * @license http://www.futuretek.cz/license FTSLv1
+ * @license Apache-2.0
  * @link    http://www.futuretek.cz
  */
 class FontAwesomePicker extends InputWidget
