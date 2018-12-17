@@ -74,7 +74,7 @@
                 element: c,
                 isWindow: d,
                 isDocument: e,
-                offset: c.offset() || {
+                offset: {
                     left: 0,
                     top: 0
                 },
@@ -392,6 +392,9 @@
             } else {
                 this.container = this.element.is("input,textarea,button,.btn") ? this.element.parent() : this.element;
             }
+        }
+        if(this.container.is('.input-group')){
+            this.container = this.container.parent();
         }
         this.container.addClass("iconpicker-container");
         if (this.isDropdownMenu()) {
