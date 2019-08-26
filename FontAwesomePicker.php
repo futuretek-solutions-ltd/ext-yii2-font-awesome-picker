@@ -63,7 +63,7 @@ class FontAwesomePicker extends InputWidget
         $icons = [];
         foreach (['FAR', 'FAL', 'FAS', 'FAB', 'FAD'] as $type) {
             $prefix = strtolower($type);
-            $ref = new \ReflectionClass('futuretek\fontawesome' . $type);
+            $ref = new \ReflectionClass('futuretek\fontawesome\\' . $type);
             foreach ($ref->getConstants() as $name => $icon) {
                 if (0 !== strpos($name, '_')) {
                     continue;
