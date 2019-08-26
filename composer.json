@@ -27,7 +27,8 @@
     },
     "require": {
         "yiisoft/yii2": "^2.0.0",
-        "yiisoft/yii2-bootstrap": "^2.0.0"
+        "yiisoft/yii2-bootstrap": "^2.0.0",
+        "futuretek/yii2-font-awesome-pro": "5.10.2"
     },
     "autoload": {
         "psr-4": {

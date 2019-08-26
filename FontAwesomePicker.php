@@ -44,10 +44,34 @@ class FontAwesomePicker extends InputWidget
         FontAwesomePickerAsset::register($this->view);
         $this->view->registerCss('div.iconpicker-items > div.tooltip { display:none!important; }', [], 'iconpicker-tooltip');
         $this->view->registerJs('$("#' . $this->options['id'] . '").iconpicker({
-        placement: "' . $this->placement . '"
+        placement: "' . $this->placement . '",
+        icons: [' . $this->getIconList() . ']
         });', View::POS_READY);
 
         Html::addCssClass($this->options, 'form-control');
         echo $this->hasModel() ? Html::activeTextInput($this->model, $this->attribute, $this->options) : Html::textInput($this->name, $this->value, $this->options);
+    }
+
+    /**
+     * Get icon list for the picker
+     *
+     * @return string
+     * @throws \ReflectionException
+     */
+    public function getIconList()
+    {
+        $icons = [];
+        foreach (['FAR', 'FAL', 'FAS', 'FAB', 'FAD'] as $type) {
+            $prefix = strtolower($type);
+            $ref = new \ReflectionClass('futuretek\fontawesome' . $type);
+            foreach ($ref->getConstants() as $name => $icon) {
+                if (0 !== strpos($name, '_')) {
+                    continue;
+                }
+                $icons[] = '"' . $prefix . ' ' . $icon . '"';
+            }
+        }
+
+        return implode(',', $icons);
     }
 }
